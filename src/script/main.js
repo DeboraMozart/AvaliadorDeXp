@@ -1,3 +1,6 @@
+const jsConfetti  =  new JSConfetti();
+jsConfetti .addConfetti();
+
 function playSound(audioName){
     let audio = new Audio(`/src/sounds/${audioName}.mp3`);
     audio.volume = 0.09
@@ -6,6 +9,7 @@ function playSound(audioName){
 
 function typingSound(){
     playSound("writing-sound");
+
 }
 
 function btnConfirm(){
@@ -19,3 +23,4 @@ function btnPlus(){
 function btnSub(){
     playSound("hit-sound-xp");
 }
+
