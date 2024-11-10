@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=MedievalSharp&family=My+Soul&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 #confetti{
     position: fixed;
     height: 100%;
@@ -5,4 +7,41 @@
     top: 0px;
     left: 0px;
     z-index: 999;
+}
+
+:root{
+    --gradient: linear-gradient(
+        to right,
+        #90EE90,
+        #228B22
+    )
+}
+
+#congrats-tittle{
+    margin-top: 10rem;
+    text-align: center;
+
+}
+
+h1{
+    font-size: 7rem;
+    letter-spacing: 30px;
+    font-family: "MedievalSharp", cursive;
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+p{
+    font-family: "MedievalSharp";
+    font-size: large;
+    color: #ffffff;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+body{
+    background: url("/src/imagens/background-emblemas.png") no-repeat;
+    background-size: cover;
 }

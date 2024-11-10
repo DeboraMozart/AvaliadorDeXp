@@ -1,4 +1,7 @@
 const jsConfetti  =  new JSConfetti();
+window.onload = () => {
+    jsConfetti.addConfetti() 
+}
 jsConfetti .addConfetti();
 
 function playSound(audioName){
