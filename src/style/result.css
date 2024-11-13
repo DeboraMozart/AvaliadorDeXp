@@ -12,13 +12,12 @@
 :root{
     --gradient: linear-gradient(
         to right,
-        #90EE90,
+        #90EE90 50%,
         #228B22
     )
 }
 
 #congrats-tittle{
-    margin-top: 10rem;
     text-align: center;
 
 }
@@ -44,4 +43,12 @@ p{
 body{
     background: url("/src/imagens/background-emblemas.png") no-repeat;
     background-size: cover;
+}
+
+.emblem-area{
+    text-align: center;
+}
+
+img{
+    height: 30rem;
 }
