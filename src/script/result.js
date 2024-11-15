@@ -1,5 +1,6 @@
 const jsConfetti  =  new JSConfetti();
-
+const insertName = document.getElementById('name');
+const insertXp = document.getElementById('rank');
 window.onload = () => {
     jsConfetti.addConfetti() 
 }
@@ -27,15 +28,5 @@ const imagePaths = {
 }
 
 
-function initialize(){
-    loadStorage();
-}
 
-//Vai carregar os itens salvos em localStorage
-function loadStorage(){
-    console.log(localStorage.getItem('message'));
-    let getState = JSON.parse(localStorage.getItem('theState'));
-    console.log(getState);
-}
-
-initialize();
+insertName.textContent = localStorage.getItem('nameKey');

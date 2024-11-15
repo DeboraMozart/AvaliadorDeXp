@@ -10,19 +10,15 @@
     <main>
         <section id="infor" class="medievalsharp-regular">
         <input type="text" placeholder="enter name" class="medievalsharp-regular" onkeydown="typingSound()" id="name-field">
-        <span>
-            <button class="btn-input" onclick="btnSub()">-</button>
-            <input type="number" placeholder="select xp" class="medievalsharp-regular" id="xp-field" min="0" max="10001">
-            <button class="btn-input" onclick="btnPlus()">+</button>
-        </span>
+        <input type="number" placeholder="select xp" class="medievalsharp-regular" onkeydown="typingSound()" id="xp-field" min="0" max="10001">
         <span>
             <a href="result.html"><button style="background-color: green;" class="btn-acao medievalsharp-regular" onclick="btnConfirm()" id="confirm">Confirmar</button></a>
-            <button class="btn-acao medievalsharp-regular" onclick="btnReset()">reset</button>
+            <button class="btn-acao medievalsharp-regular" onclick="btnSave()">Salvar</button>
         </span>
         </section>
     </main>
     
-    <script src="src/script/main.js"></script>
-
+    <script src="/src/script/main.js"></script>
+    <script src="/src/script/result.js"></script>
 </body>
 </html>
